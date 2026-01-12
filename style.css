@@ -1,0 +1,217 @@
+
+      *{
+         margin: 0;
+         padding: 0; box-sizing: border-box;
+      }
+
+       .navbar{
+        background-color: #ff8d0a;
+        color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        
+    }
+
+     .logo-zone{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: 'Monotype Corsiva';
+        font-size: 30px;
+
+    }   
+ 
+    .logo{
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        object-fit: cover;
+        border-color: rgb(255, 255, 255);
+        border-style: solid;
+        box-shadow: 0 0 10px rgba(240, 140 ,255, 0.5);
+    }
+
+     .text{
+        font-size: 20px;
+        font-weight: bold;
+        color: brown;
+        margin: 0px;
+    }
+    .menu a {
+        color: rgb(240, 255, 242);
+        text-decoration: none;
+        margin-left: 30px;
+        font-size: 20px;
+        font-family: 'Monotype Corsiva';
+        font-weight: 700;
+    }
+
+    .menu a :hover{
+        text-decoration: underline;
+    }
+
+     .menu a:hover {
+        background-color: #ddd;
+        color: #f10909; 
+        text-align: right;
+      }
+
+
+      .content{
+        color: black;
+        text-align: center;
+      }
+
+      body{
+          background: url(Background1.png) no-repeat center;
+          font-family: Arial, Helvetica, sans-serif;
+       
+         color: #333;
+      }
+      .header{
+         background: #ff8d0a;
+         color: aliceblue;
+         text-align: left;
+         padding: 20px 10px;         
+      }
+
+      .header h1{
+         font-size: 2.5rem;
+      }
+
+      .container{
+         display: flex;
+         gap: 30px;
+         max-width: 1100px;
+         margin: auto;
+         padding: 40px 20px;
+      }
+
+      .grid-item :hover{
+         text-decoration: none;
+         background-color: #ddd;
+         color: #f10909; 
+         text-align: left;
+
+      }
+      
+      .content{
+         flex: 2;
+      }
+      
+      .content h2{
+         margin-bottom: 0px;
+      }
+      .content p{
+         margin-bottom: 15px;
+         line-height: 1.6;
+      }
+
+      .btn{
+         display: inline-block;
+         padding: 12px 40px;
+         background: #f0ae63;
+         color: aliceblue;
+         text-decoration: none;
+         border-radius: 5px;
+      }
+
+      .sidebar{
+         flex: 1;
+         background:  aliceblue;
+         padding: 20px;
+         border-radius: 8px;
+         
+      }
+      .sidebar ul{
+         list-style: none;
+
+      }
+      .sidebar li{
+         margin-bottom: 10px;
+
+         
+      }
+
+      .image{
+         width: 150px;
+         height: 150px;
+      }
+
+      .footer{
+         text-align: center;
+         background: #ff8d0a;
+         color: rgb(247, 247, 241);
+         padding: 20px;
+         margin: 16px;
+         font-size: small;
+      }
+
+        body{
+    font-family: 'Cooper Black';
+    
+    margin: 0px;
+    padding: 20px;
+}
+
+.grid-contener{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 15px;
+    background-color: #fcc60362;
+}
+
+.grid-item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.grid-item img {
+    height: 100%;
+    width: 350px;
+    object-fit: cover;
+
+}
+
+.grid-item a {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;  
+    text-decoration:turquoise;
+    text-align: start;   
+    text-align: center;
+    left: 0px;
+    right: 0px;    
+    font-size: 20px;
+
+}
+      @media(max-width: 768px){
+         .container{
+            flex-direction: column;
+         }
+         .header h1{
+            font-size: 2rem;
+         }
+         .btn{
+            background: #bd1111; 
+            text-decoration: underline;           
+         }
+         .sidebar{
+            background:  #bd1111;
+         }
+
+         .image{
+            margin-bottom: auto;
+            padding-left: 10px;
+         }
+
+      } 
+
+    
+
+ 

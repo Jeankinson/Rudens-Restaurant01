@@ -1,0 +1,263 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Rudens Restaurant</title>
+   <style>
+      *{
+         margin: 0;
+         padding: 0; box-sizing: border-box;
+      }
+
+       .navbar{
+        background-color: #ff8d0a;
+        color: aliceblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        
+    }
+
+     .logo-zone{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: 'Monotype Corsiva';
+        font-size: 30px;
+
+    }   
+ 
+    .logo{
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        object-fit: cover;
+        border-color: rgb(255, 255, 255);
+        border-style: solid;
+        box-shadow: 0 0 10px rgba(240, 140 ,255, 0.5);
+    }
+    
+    
+     .text{
+        font-size: 30px;
+        font-weight: bold;
+        color: brown;
+        margin: 0px;
+    }
+    .menu a {
+        color: rgb(240, 255, 242);
+        text-decoration: none;
+        margin-left: 30px;
+        font-size: 20px;
+        font-family: 'Monotype Corsiva';
+        font-weight: 700;
+    }
+
+    
+    .menu a:hover {
+        background-color: #ddd;
+        color: #f10909; 
+        text-align: right;
+        text-decoration: underline;
+      }
+
+      body{
+         font-family: Times New Roman, Helvetica, sans-serif;
+         background: #f6f7f8;
+         color: #333;
+      }
+      .header{
+         background: #ff8d0a;
+         color: aliceblue;
+         text-align: left;
+         padding: 20px 10px;         
+      }
+
+
+      .hero{
+        background: url(Background.png) no-repeat center;
+        background-size: cover;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-attachment: local;
+        padding: 0 20px;
+        
+    }
+
+      .header h1{
+         font-size: 2.5rem;
+      }
+
+      .container{
+         display: flex;
+         gap: 30px;
+         max-width: 1100px;
+         margin: auto;
+         padding: 40px 20px;
+      }
+      
+      .content{
+         flex: 2;
+      }
+      
+      .content h2{
+         margin-bottom: 10px;
+      }
+      .content p{
+         margin-bottom: 10px;
+         line-height: 1.6;
+      }
+
+      .btn{
+         display: inline-block;
+         padding: 12px 40px;
+         background: #ff8d0a;
+         color: rgb(255, 255, 255);
+         text-decoration: none;
+         border-radius: 5px;
+      }
+
+      .sidebar{
+         flex: 1;
+         background:  rgb(252, 141, 22);
+         padding: 20px;
+         border-radius: 8px;
+
+         
+      }
+      .sidebar ul{
+         list-style: none;
+
+      }
+      .sidebar li{
+         margin-bottom: 10px;
+         color: #ffffff;
+
+         
+      }
+
+      .image{
+         width: 150px;
+         height: 150px;
+      }
+
+      .footer{
+         text-align: center;
+         background: #ff8d0a;
+         color: rgb(247, 247, 241);
+         padding: 20px;
+
+      }
+      .p1{
+        color: white;
+        font-size: 30px;
+        font-family: 'Times New Roman';
+    }
+
+      .hero h2{
+         color: white;
+         font-size: 30px;
+         font-family:'Matura MT Script Capitals';
+      }
+      .footer a :hover{ 
+        background-color: aliceblue;
+        color: #f10909; 
+        text-align: right;
+        text-decoration: underline;
+      }
+      @media(max-width: 768px)
+      {
+         .container{
+            flex-direction: column;
+         }
+         .header h1{
+            font-size: 2rem;
+         }
+
+         .navbar{
+            background:  #bd1111;
+         }
+
+         .hero{
+             margin-bottom: auto;
+         }
+         
+         .btn{
+            background: #bd1111; 
+            text-decoration: underline;           
+         }
+         .sidebar{
+            background:  #bd1111;
+         }
+
+         .image{
+            margin-bottom: auto;
+            padding-left: 10px;
+         }        
+
+          .footer{
+            background:#eb0505 ;
+            padding: 10px;
+          }
+
+      }  
+
+      
+  
+   </style>
+</head>
+<body>
+         <header class="navbar">
+
+            <div class="logo-zone">
+               <img src="logo.png" alt="sa se yo image" class="logo">
+                  <span class="logo-text">Rude Restaurant</span>
+
+            </div>
+                  <nav class="menu">
+                     <a href="index.html">Acceuil</a>
+                     <a href="Menu.html">Menu</a>
+                     <a href="Special.html">Special</a>
+                     <a href="Reservation.html">Réservation</a>            
+                     <a href="Contact.html">Contact</a>                  
+        
+                  </nav>
+         </header>
+          <!--Hero section-->
+    <section class="hero">     
+
+       
+
+        <h2>Bienvenue chez Rudens Restaurant</h2>
+        <p class="p1">Restaurant moderne
+        </p>
+    
+            
+   <section class="container">
+      <!--prezantasyon -->
+      <div class="content">
+         <h2>Merci, faire votre choix</h2>
+                   
+        
+
+         <a href="Menu.html" class="btn">MENU</a> 
+    
+              
+   </section>
+   
+   </body>
+  
+   <footer class="footer">
+      <p>
+         &copy;Rudens Restaurant tout droit reserver, Jeankinson Dégeneur. <br>
+         <a href="Contact.html">Contact</a> <br>
+         &copy;jeankinsond@gmail.com 
+      </p>
+   </footer>
+
+</html>

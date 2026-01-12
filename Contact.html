@@ -1,0 +1,298 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Rudens Restaurant</title>
+   <style>
+      *{
+         margin: 0;
+         padding: 0; box-sizing: border-box;
+      }
+      
+
+       .navbar{
+        background-color: #ff8d0a;
+        color: aliceblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        
+    }
+
+     .logo-zone{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: 'Monotype Corsiva';
+        font-size: 30px;
+
+    }   
+ 
+    .logo{
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        object-fit: cover;
+        border-color: rgb(255, 255, 255);
+        border-style: solid;
+        box-shadow: 0 0 10px rgba(240, 140 ,255, 0.5);
+    }
+
+     .text{
+        font-size: 20px;
+        font-weight: bold;
+        color: brown;
+        margin: 0px;
+    }
+    .menu a {
+        color: rgb(240, 255, 242);
+        text-decoration: none;
+        margin-left: 30px;
+        font-size: 20px;
+        font-family: 'Monotype Corsiva';
+        font-weight: 700;
+    }
+
+    .menu a :hover{
+        text-decoration: underline;
+    }
+     .menu a:hover {
+        background-color: #ddd;
+        color: #f10909; 
+        text-align: right;
+      }
+
+      body{
+        background: url(Background.png) no-repeat center;
+        background-size: cover;
+        height: 80vh;
+         
+      }
+      .header{
+         background: #ff8d0a;
+         color: aliceblue;
+         text-align: left;
+         padding: 20px 10px;         
+      }
+
+      .header h1{
+         font-size: 2.5rem;
+      }
+
+      .container{
+         display: flex;
+         gap: 30px;
+         max-width: 1100px;
+         margin: auto;
+         padding: 40px 20px;
+      }
+      
+      .content{
+         flex: 2;
+      }
+      
+      .content h2{
+         margin-bottom: 15px;
+         color: aliceblue;
+         font-size: large 18px;;
+         text-align: center;
+      }
+      .content p{
+         margin-bottom: 15px;
+         line-height: 1.6;
+         color:rgb(158, 193, 225);
+         font-size: 20px;
+      }
+       .adress{
+         font-size: 20px;
+         margin-bottom: 15px;
+         color: aliceblue;
+         text-align: right;
+         font-style: italic;
+       }
+
+       .adress h2{
+         text-align: left;
+         font-size: 20px;
+         color: aliceblue;
+
+       }
+
+      
+
+      .btn{
+         display: inline-block;
+         padding: 12px 40px;
+         background: #ff8d0a;
+         color: aliceblue;
+         text-decoration: none;
+         border-radius: 5px;
+         align-items: center;
+      }
+
+      .sidebar{
+         flex: 1;
+         background:  rgba(255, 252, 240, 0.119);
+         padding: 20px;
+         border-radius: 8px;
+         
+      }
+      .sidebar ul{
+         list-style: none;
+
+      }
+      .sidebar li{
+         margin-bottom: 10px;   
+         color: aliceblue;
+         font-size: 20px;
+         font-family: Matura MT Script Capitals;  
+         text-align: right;    
+      }
+
+    .sidebar li :hover {
+        background-color: aliceblue;
+        color: rgb(255, 51, 0); 
+        text-align: right;
+        text-decoration: none;
+      }
+
+      .sidebar p{
+         color:rgb(112, 171, 226);
+         font-size:  20px;
+         font-style: italic;
+      }
+      .sidebar h2{
+         color: rgb(43, 0, 255);
+         font-size: large 20px;
+      }
+
+       
+
+      .footer{
+         text-align: center;
+         background: #ff8d0a;
+         color: rgb(247, 247, 241);
+         padding: 20px;
+      }
+
+    
+      @media(max-width: 768px){
+         .container{
+            flex-direction: column;
+         }
+         .header h1{
+            font-size: 2rem;
+         }
+         .btn{
+            background: #bd1111; 
+            text-decoration: underline;           
+         }
+         .sidebar{
+            background:  #bd1111;
+         }
+
+         .image{
+            margin-bottom: auto;
+            padding-left: 10px;
+         }
+
+         .footer{
+            background: #bd1111;
+            padding: 10px;
+         }
+
+      }  
+
+
+
+   </style>
+</head>
+<body>
+         <header class="navbar">
+
+            <div class="logo-zone">
+               <img src="logo.png" alt="sa se yo image" class="logo">
+                  <span class="logo-text">Rudens Restaurant</span>
+
+            </div>
+                  <nav class="menu">
+                     <a href="index.html">Acceuil</a>
+                     <a href="Menu.html">Menu</a>
+                     <a href="Special.html">Special</a>
+                     <a href="Reservation.html">Réservation</a>            
+                     <a href="Contact.html">Contact</a>              
+        
+                  </nav>
+         </header>
+            
+   <section class="container">
+      <!--prezantasyon -->
+      <div class="content">
+         <h2>Bienvenue chez Rudens Restaurant</h2><br>
+
+         <div class="Adress">
+            Adress: Jacmel Haiti, Rue Dupré-Tuneir #11 <br>
+            Whatsapp.com: +509 35634645 <br>
+            Téléphone: +509 37326573 <br>
+            Email: jeankinsond@gmail.com <br>
+            Instagram: Rudensly Duperoy <br> <br>
+
+               <h2>
+                  Horaire: <br>
+                  Lundi a Samedi  <br>
+                  Matin: 7h30 - 11h30 <br>
+                  Midi  :11h30 - 6h30 <br>
+                  Soir  :6h30 - 10h30 <br>
+                  Dimanche: <br>
+                  Matin:   7h30 - 2h30
+               </h2>
+            
+         
+         </div>
+         
+         <hr>
+                   
+         <p>
+            Rudens restaurant est un restaurant haïtien est qui sert une cuisine créole unique, fusionnant
+            des influences africaines, françaises, amérindiennes et espagnoles, caractérisée par des saveurs 
+            audacieuses, épicées, utilisant des herbes, des légumes, du riz, du maïs et des viandes. Il propose
+            des plats emblématiques comme le griot (porc frit) ou le diri ak pwa wouj (riz et haricots rouges) ect..
+        </p>   
+        <hr>         
+       
+
+         <a href="Menu.html" class="btn">Menu</a> 
+     </div>
+
+         <!--info-->
+         <div class="sidebar">
+            <h2>Nos differents Services</h2>
+            <ul>
+               <li><a href="index.html"> Livraison</a></li>
+               <li><a href="Reservation.html"> Commande</a></li>
+               <li><a href="Special.html"> Réservation</a></li>
+               <li><a href="Menu.html"> Réceptions diverses</a></li>
+            </ul>
+            <img class="image" src="Restaurant.png" alt="Notre 1er image">
+            <hr>
+            <p>               
+               La cuisine haitienne utilise beaucoup d'épices, d'aromates (ail, oignon, persil), et de 
+               bananes plantains, avec des plats servis souvent frits ou en ragoûts, et des boissons comme le Crémas et
+               les jus de fruits tropicaux.              
+            </p>
+             <hr>
+
+         </div> 
+              
+   </section>
+   <footer class="footer">
+      <p>
+         &copy;Rudens Restaurant tout droit reserver, Jeankinson Dégeneur. <br>
+         <a href="index.html">Acceuil</a> <br>
+         &copy;jeankinsond@gmail.com 
+      </p>
+   </footer>
+</body>
+</html>
+

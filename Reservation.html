@@ -1,0 +1,317 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Rudens Restaurant</title>
+   <style>
+      *{
+         margin: 0;
+         padding: 0; box-sizing: border-box;
+         
+      }
+      
+       .navbar{
+        background-color: #ff8d0a;
+        color: aliceblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        
+    }
+
+     .logo-zone{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: 'Monotype Corsiva';
+        font-size: 30px;
+
+    }
+
+   
+ 
+    .logo{
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        object-fit: cover;
+        border-color: rgb(255, 255, 255);
+        border-style: solid;
+        box-shadow: 0 0 10px rgba(240, 140 ,255, 0.5);
+    }
+
+     .text{
+        font-size: 20px;
+        font-weight: bold;
+        color: brown;
+        margin: 0px;
+    }
+    .menu a {
+        color: rgb(240, 255, 242);
+        text-decoration: none;
+        margin-left: 30px;
+        font-size: 20px;
+        font-family: 'Monotype Corsiva';
+        font-weight: 700;
+    }
+
+    .menu a :hover{
+        text-decoration: underline;
+    }
+
+     .menu a:hover {
+        background-color: #ddd;
+        color: #f10909; 
+        text-align: right;
+      }
+
+      body{font-family: Arial, Helvetica, sans-serif;
+         background: #f6f7f8;
+         color: #333;
+      }
+      .header{
+         background: #ff8d0a;
+         color: aliceblue;
+         text-align: left;
+         padding: 20px 10px;         
+      }
+
+      .header h1{
+         font-size: 2.5rem;
+      }
+
+     
+      .container{
+         display: flex;
+         gap: 30px;
+         max-width: 1100px;
+         margin: auto;
+         padding: 40px 20px;
+         
+      }
+      body{
+         background: url(Background.png) no-repeat center;
+         background-size: cover;
+         height: 80vh;        
+         background-attachment: local;
+         padding: 0 20px;
+        
+      }
+      
+      .content{
+         flex: 2;
+      }
+      
+      .content h2{
+         margin-bottom: 15px;
+         color: blue;
+         text-align: center;
+         font-family: 'Matura MT Script Capitals';
+      }
+      .content p{
+         margin-bottom: 15px;
+         line-height: 1.6;
+      }
+
+      .btn{
+         display: inline-block;
+         padding: 12px 40px;
+         background: #ff8d0a;
+         color: aliceblue;
+         text-decoration: none;
+         border-radius: 5px;
+      }
+
+      .sidebar{
+         flex: 1;
+         background:  rgba(240, 248, 255, 0.066);
+         padding: 20px;
+         border-radius: 8px;
+         color: aliceblue;
+         
+      }
+      .sidebar ul{
+         list-style: none;
+
+      }
+
+      .sidebar p{
+         font-size: 20px;
+      }
+      .sidebar li{
+         margin-bottom: 10px;
+         color: aliceblue;
+         font-size: 20px;
+         font-family: Matura MT Script Capitals;
+         text-align: right;
+         
+      }
+
+
+      .sidebar li :hover {
+        background-color: aliceblue;
+        text-align: right;
+        text-decoration: navajowhite;
+        color: rgb(250, 52, 7);
+      }
+      
+      .image{
+         width: 150px;
+         height: 150px;
+         border-radius: 50px;         
+      }
+
+      .form{
+         background-color: #d4fae514;
+         color:aliceblue;
+      }
+
+      .footer{
+         text-align: center;
+         background: #ff8d0a;
+         color: rgb(247, 247, 241);
+         padding: 20px;
+      }
+      @media(max-width: 768px){
+
+         .navbar{
+            background: #bd1111;
+            font-size: 2rem;
+         }
+         .container{
+            flex-direction: column;
+         }
+         .header h1{
+            font-size: 2rem;
+         }
+         .btn{
+            background: #bd1111; 
+            text-decoration: underline;           
+         }
+         .sidebar{
+            background:  #bd1111;
+            
+         }
+
+         .image{
+            margin-bottom: auto;
+            padding-left: 10px;
+            
+         }
+
+         .footer{
+            background: #bd1111;
+            padding: 10px;
+         }
+
+      }  
+
+
+   </style>
+</head>
+<body>
+         <header class="navbar">
+
+            <div class="logo-zone">
+               <img src="logo.png" alt="sa se yo image" class="logo">
+                  <span class="logo-text">Rudens Restaurant</span>
+
+            </div>
+                  <nav class="menu">
+                      <a href="index.html">Acceuil</a>
+                     <a href="Menu.html">Menu</a>
+                     <a href="Special.html">Special</a>
+                     <a href="Reservation.html">Réservation</a>            
+                     <a href="Contact.html">Contact</a>               
+        
+                  </nav>
+         </header>
+            
+   <section class="container">
+      <!--prezantasyon -->
+      <div class="content">
+         <h2>Bienvenue chez Rudens Restaurant</h2>
+      
+          <section class="form">        
+         <form action="/traiment obligatoires" method="post"> 
+        
+        <label for="Nom Complet">Nom Complet:</label>
+        <input type="text" Prenom="Prénom" placeholder="Rantre nom" required>
+        <br><br>
+
+        <label for="Adress">Notre Adress:</label>
+        <input type="text" Adress="Adress" placeholder="Rantre Adress" required>
+        <br><br>
+
+        <p>Sexe</p>
+        <input type="radio" value="fi" name="personne"required> F 
+        <input type="radio" value="gacon" name="personne" required> M<br> <br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Rantre email ou"required>
+        <br><br>
+
+        <label for="phone">Téléphone:</label>
+        <input   id="phone"  name="phone" type="tel" placeholder="+509" required    maxlength="12"   pattern="^\+509[0-9]{8}$"/>
+     
+        <br><br>
+        
+        <label for="search">Votre Plat:</label>
+        <input type="search" placeholder="Plat Commander"> <br><br>  
+
+        <label for="search">No. Carte:</label>
+        <input type="search" placeholder="Rentrer le no. de votre Carte"> <br><br> 
+
+         <label for="search">Montant:</label>
+        <input type="search" placeholder="$"> <br><br> 
+
+        <label for="file">Chosir votre Plat:</label>
+        <input type="file" required> <br><br>        
+        
+
+        <label for="reset">Eface</label>
+        <input type="reset" value="Eface"> <br><br>
+                
+
+        <textarea cols="30" rows="10" placeholder="Votre opinion">Description de votre commande</textarea>
+        <br><br>
+
+        <label for="Commande">Commande:</label>
+        <input type="submit" value="Envoyer"> <br><br><br>
+    </form>
+    </section> 
+
+               <a href="Menu.html" class="btn">MENU</a> 
+     </div>
+
+         <!--info-->
+         <div class="sidebar">
+            
+            <p>La cuisine haïtienne est une cuisine créole riche et épicée, née d'un métissage historique des saveurs africaines, 
+               françaises, espagnoles et taïnos, caractérisée par des assaisonnements généreux (ail, poivron, oignon, herbes), 
+               l'utilisation de légumes racines (igname, manioc), et des plats emblématiques comme le riz collé et la soupe joumou,
+               symbole national. Elle est fortement liée à l'identité culturelle haïtienne, utilisant des ingrédients locaux et 
+               des techniques de cuisson qui créent des plats uniques. 
+               <br><br>
+            </p>
+            <h3>Nos differents Services</h3>
+            <ul>
+               <li><a href="index.html"> Livraison</a></li>
+               <li><a href="Reservation.html"> Commande</a></li>
+               <li><a href="Special.html"> Réservation</a></li>
+               <li><a href="Menu.html"> Réceptions diverses</a></li>
+            </ul>
+
+         </div> 
+               <img class="image" src="image01.png" alt="Notre plats special">
+   </section>
+   <footer class="footer">
+      <p>
+         &copy;Rudens Restaurant tout droit reserver, Jeankinson Dégeneur. <br>
+         <a href="index.html">Acceuil</a> <br>
+         &copy;jeankinsond@gmail.com 
+      </p>
+   </footer>
+</body>
+</html>

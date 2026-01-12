@@ -1,0 +1,310 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Rudens Restaurant</title>
+   <style>
+      *{
+         margin: 0;
+         padding: 0; box-sizing: border-box;
+      }
+
+       .navbar{
+        background-color: #ff8d0a;
+        color: aliceblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        
+    }
+
+     .logo-zone{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: 'Monotype Corsiva';
+        font-size: 30px;
+
+    }  
+ 
+    .logo{
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        object-fit: cover;
+        border-color: rgb(255, 255, 255);
+        border-style: solid;
+        box-shadow: 0 0 10px rgba(240, 140 ,255, 0.5);
+    }
+
+     .text{
+        font-size: 20px;
+        font-weight: bold;
+        color: brown;
+        margin: 0px;
+    }
+    .menu a {
+        color: rgb(240, 255, 242);
+        text-decoration: none;
+        margin-left: 30px;
+        font-size: 20px;
+        font-family: 'Monotype Corsiva';
+        font-weight: 700;
+    }
+
+    .menu a :hover{
+        text-decoration: underline;
+    }
+
+     .menu a:hover {
+        background-color: #ddd;
+        color: #f10909; 
+        text-align: right;
+      }
+
+      body{
+         font-family: Arial, Helvetica, sans-serif;
+         background: #f6f7f8;
+         color: #333;
+      }
+      .header{
+         background: #ff8d0a;
+         color: aliceblue;
+         text-align: left;
+         padding: 20px 10px;         
+      }
+
+    
+      .container{
+         display: flex;
+         gap: 30px;
+         max-width: 1100px;
+         margin: auto;
+         padding: 40px 20px;
+         background-color: #ff8d0a48;
+         background: url(Background1.png) no-repeat center;
+      }
+
+      .container h2{
+         display: flexbox;
+         color: #000000;
+         font-family: Matura MT Script Capitals;
+         
+      }
+      
+      .content{
+         flex: 2;
+      }    
+      
+
+      .btn{
+         display: inline-block;
+         padding: 12px 40px;
+         background: #ff8d0a;
+         color: aliceblue;
+         text-decoration: none;
+         border-radius: 5px;
+      }
+
+      .sidebar{
+         flex: 1;
+         background:  aliceblue;
+         padding: 20px;
+         border-radius: 8px;
+      }
+
+      .horaire{
+         background-color: aliceblue;
+         font-family:Franklin Gothic Heavy ;
+         padding: 20px;
+         border-radius: 8px;
+      }
+      .horaire1{
+         background-color: aliceblue;
+         font-family: Franklin Gothic Heavy;
+         padding: 20px;
+         border-radius: 8px;
+      }
+
+           
+      .sidebar ul{
+         list-style: none;
+         font-size: 20px;
+         font-family: Franklin Gothic Heavy;
+
+      }
+
+      .horaire ul{
+         list-style: none;
+         font-size: 20px;
+         font-family: Franklin Gothic Heavy;
+
+      }
+
+      .horaire1 ul{
+         list-style: none;
+         font-size: 20px;
+         font-family: Franklin Gothic Heavy;
+      }
+
+      .horaire2 ul{
+         background-color: aliceblue;
+         font-family:Franklin Gothic Heavy ;
+         padding: 20px;
+         border-radius: 8px;      
+         list-style: none;
+         font-size: 20px;
+      }
+
+      .sidebar li{
+         margin-bottom: 10px;
+         
+      }
+
+      .sidebar a :hover{
+        background-color: #ddd;
+        color: #f10909; 
+        text-align: right;
+
+      }
+
+      .image{
+         width: 150px;
+         height: 150px;
+      }
+
+      .footer{
+         text-align: center;
+         background: #ff8d0a;
+         color: rgb(247, 247, 241);
+         padding: 20px;
+      }
+      @media(max-width: 768px){
+         .container{
+            flex-direction: column;
+         }
+        
+         .btn{
+            background: #bd1111; 
+            text-decoration: underline;           
+         }
+         .sidebar{
+            background:  #bd1111;
+         }
+
+         .image{
+            margin-bottom: auto;
+            padding-left: 10px;
+         }
+
+      } 
+
+   </style>
+</head>
+<body>
+         <header class="navbar">
+
+            <div class="logo-zone">
+               <img src="logo.png" alt="sa se yo image" class="logo">
+                  <span class="logo-text">Rudens Restaurant</span>
+
+            </div>
+                  <nav class="menu">
+                      <a href="index.html">Acceuil</a>
+                     <a href="Menu.html">Menu</a>
+                     <a href="Special.html">Special</a>
+                     <a href="Reservation.html">Réservation</a>            
+                     <a href="Contact.html">Contact</a>                  
+        
+                  </nav>
+         </header>
+            
+   <section class="container">
+      <!--prezantasyon -->
+      
+      <div class="content">
+          <h2>Bienvenue Chez Rudens Restaurant</h2>         
+        
+                   
+        
+         <a href="Reservation.html" class="btn">Reservation</a> 
+     </div>
+
+         <!--info-->         
+         <div class="sidebar">           
+            
+            <ul>
+                  --Matin--
+               <li>Spaghetti</li>
+               <li>Banane à Œuf</li>
+               <li>Banane à foi</li>
+               <li>Sandwich Jambon</li>
+               <li>Sandwich Hotdog</li>
+               <li>Sandwich Poulet</li>
+               <li><a href="Reservation.html"><img class="image" src="Spaguetti.jpeg" alt="Notre 1er image"></a></li>
+               <li><a href="Reservation.html"><img class="image" src="Sandwich2.png" alt="Notre 1er image"></a></li>  
+               <li><a href="Reservation.html"><img class="image" src="Sandwich1.jpeg" alt="Notre 1er image"></a></li> 
+            </ul>
+
+         </div> 
+         
+         <div class="horaire">
+            
+            <ul>
+                --Midi--
+               <li>Riz arico rouge Poulet Sauces, légumes</li>
+               <li>Riz arico rouge Cabri Sauces, légumes</li>
+               <li>Riz Sauces poids légumes</li>
+               <li>Tasso cabri Banane frite </li>
+               <li>Grio Banane frite</li> 
+                
+               <li><a href="Reservation.html"><img class="image" src="riz.jpeg" alt="Notre 1er image"></a></li>
+               <li><a href="Reservation.html"><img class="image" src="poisson.png" alt="Notre 1er image"></a></li> 
+               <li><a href="Reservation.html"><img class="image" src="poisson1.jpeg" alt="Notre 1er image"></a></li>        
+
+
+
+            </ul>
+             
+
+         </div>
+         
+         <div class="horaire1">
+            
+            <ul>
+                 --Soir--
+               <li>Bouillon</li>
+                <li><a href="Reservation.html"><img class="image" src="image2.png" alt="Notre 1er image"></a></li>                
+                <li><a href="Reservation.html"><img class="image" src="Bouillon.png" alt="Notre 1er image"></a></li>
+                <li><a href="Reservation.html"><img class="image" src="Poulet.jpg" alt="Notre 1er image"></a></li>
+                 <li><a href="Reservation.html"><img class="image" src="image02.png" alt="Notre 1er image"></a></li> 
+            </ul>  
+            <h1>Faire votre choix</h1>           
+
+         </div>
+         <div class="horaire2">
+            
+            <ul>
+                   --Dimanche--
+               <li>Soupe de l'Indépendance</li>
+                <li><a href="Reservation.html"><img class="image" src="Soupe.jpeg" alt="Notre 1er image"></a></li>                
+                <li><a href="Reservation.html"><img class="image" src="image01.png" alt="Notre 1er image"></a></li>  
+                <li><a href="Reservation.html"><img class="image" src="Griots.jpg" alt="Notre 1er image"></a></li> 
+                <li><a href="Reservation.html"><img class="image" src="plat03.jpg" alt="Notre 1er image"></a></li> 
+            </ul>
+            <h1>Delicieuse</h1>
+         </div>
+              
+   </section>
+   </body>
+   <footer class="footer">
+      <p>
+         &copy;Rudens Restaurant tout droit reserver, Jeankinson Dégeneur. <br>
+         <a href="Contact.html">Contact</a> <br>
+         &copy;jeankinsond@gmail.com | Tél: +509 37326573
+      </p>
+   </footer>
+
+</html>
+
